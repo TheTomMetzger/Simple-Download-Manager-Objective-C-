@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		E2337D891E122CD0001850BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337D881E122CD0001850BA /* main.m */; };
 		E2337D8C1E122CD0001850BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337D8B1E122CD0001850BA /* AppDelegate.m */; };
-		E2337D8F1E122CD0001850BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337D8E1E122CD0001850BA /* ViewController.m */; };
 		E2337D921E122CD0001850BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2337D901E122CD0001850BA /* Main.storyboard */; };
 		E2337D951E122CD0001850BA /* Simple_Download_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2337D931E122CD0001850BA /* Simple_Download_Manager.xcdatamodeld */; };
 		E2337D971E122CD0001850BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2337D961E122CD0001850BA /* Assets.xcassets */; };
 		E2337D9A1E122CD0001850BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2337D981E122CD0001850BA /* LaunchScreen.storyboard */; };
 		E2337DA51E122CD0001850BA /* Simple_Download_ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337DA41E122CD0001850BA /* Simple_Download_ManagerTests.m */; };
+		E2337DE01E137216001850BA /* FileBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337DDF1E137216001850BA /* FileBrowserTableViewController.m */; };
+		E2337DE71E1374F2001850BA /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337DE61E1374F2001850BA /* WebBrowserViewController.m */; };
+		E2337DEA1E14D4FF001850BA /* FileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2337DE91E14D4FF001850BA /* FileTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +34,6 @@
 		E2337D881E122CD0001850BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2337D8A1E122CD0001850BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2337D8B1E122CD0001850BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2337D8D1E122CD0001850BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2337D8E1E122CD0001850BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E2337D911E122CD0001850BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2337D941E122CD0001850BA /* Simple_Download_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simple_Download_Manager.xcdatamodel; sourceTree = "<group>"; };
 		E2337D961E122CD0001850BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +42,12 @@
 		E2337DA01E122CD0001850BA /* Simple Download ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Download ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2337DA41E122CD0001850BA /* Simple_Download_ManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_Download_ManagerTests.m; sourceTree = "<group>"; };
 		E2337DA61E122CD0001850BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2337DDE1E137216001850BA /* FileBrowserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileBrowserTableViewController.h; path = ../FileBrowserTableViewController.h; sourceTree = "<group>"; };
+		E2337DDF1E137216001850BA /* FileBrowserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileBrowserTableViewController.m; path = ../FileBrowserTableViewController.m; sourceTree = "<group>"; };
+		E2337DE51E1374F2001850BA /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		E2337DE61E1374F2001850BA /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+		E2337DE81E14D4FF001850BA /* FileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTableViewCell.h; sourceTree = "<group>"; };
+		E2337DE91E14D4FF001850BA /* FileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +91,13 @@
 			children = (
 				E2337D8A1E122CD0001850BA /* AppDelegate.h */,
 				E2337D8B1E122CD0001850BA /* AppDelegate.m */,
-				E2337D8D1E122CD0001850BA /* ViewController.h */,
-				E2337D8E1E122CD0001850BA /* ViewController.m */,
+				E2337DDE1E137216001850BA /* FileBrowserTableViewController.h */,
+				E2337DDF1E137216001850BA /* FileBrowserTableViewController.m */,
+				E2337DE51E1374F2001850BA /* WebBrowserViewController.h */,
+				E2337DE61E1374F2001850BA /* WebBrowserViewController.m */,
 				E2337D901E122CD0001850BA /* Main.storyboard */,
+				E2337DE81E14D4FF001850BA /* FileTableViewCell.h */,
+				E2337DE91E14D4FF001850BA /* FileTableViewCell.m */,
 				E2337D961E122CD0001850BA /* Assets.xcassets */,
 				E2337D981E122CD0001850BA /* LaunchScreen.storyboard */,
 				E2337D9B1E122CD0001850BA /* Info.plist */,
@@ -218,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2337D8F1E122CD0001850BA /* ViewController.m in Sources */,
+				E2337DE01E137216001850BA /* FileBrowserTableViewController.m in Sources */,
 				E2337D8C1E122CD0001850BA /* AppDelegate.m in Sources */,
+				E2337DE71E1374F2001850BA /* WebBrowserViewController.m in Sources */,
+				E2337DEA1E14D4FF001850BA /* FileTableViewCell.m in Sources */,
 				E2337D891E122CD0001850BA /* main.m in Sources */,
 				E2337D951E122CD0001850BA /* Simple_Download_Manager.xcdatamodeld in Sources */,
 			);
@@ -422,6 +434,7 @@
 				E2337DAB1E122CD0001850BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2337DAC1E122CD0001850BA /* Build configuration list for PBXNativeTarget "Simple Download ManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +443,7 @@
 				E2337DAE1E122CD0001850BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
